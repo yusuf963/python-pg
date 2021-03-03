@@ -41,3 +41,26 @@ c = 100
 t = 6
 print(c != t)
 print(c > 6 and t < 7)
+
+
+# ! cheking the type of triangle, scalene345/isoceles553/equilateral555
+def cheking_triangle(a, b, c):
+    if a or b or c < 0:
+        print(
+            'the length of a triangle can not be 0 or less, please provide a valied side length')
+    if a and b and c > 0:
+        if a == b and b == c and a == c:
+            print('this triangle is equilateral')
+        elif a != b and b != c and a != c:
+            print('this triangle is scalene')
+        else:
+            print('this triangle is isoceles')
+
+
+cheking_triangle(1, 1, 398651)
+
+
+# !Ternary operator
+j = 10
+k = 5 if j > 10 else 20
+print(k)
